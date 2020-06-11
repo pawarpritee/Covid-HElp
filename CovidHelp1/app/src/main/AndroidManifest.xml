@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.covidhelp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/loki_logo_1_nt"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/loki_logo_1_nt"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Home2Actiivity"
+            android:label="@string/title_activity_home2_actiivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splashscreens.Splash5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splashscreens.Splash4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splashscreens.Splash3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splashscreens.Splash2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splashscreens.Splash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Auth.Getuser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CategoriesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Auth.LoginActivity" />
+        <activity android:name=".Auth.MainActivity" />
+        <activity android:name=".Auth.geofind" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>
